@@ -29,6 +29,7 @@ Mandatory Performance Requirements:
 
 The state vector is estimated using the Kalman filter. The gains obtained by the kalman filter are used to represent the complete feedback controller as follows. 
 The discrete time output feedback system is given by the following matrices:
+
 A = A_ss * K*C_ss
 
 B = [(B_ss - K*D_ss) K]
