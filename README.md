@@ -28,7 +28,10 @@ The state space model developed is saved into a mat file.
 
 In the second part of the project, the objective is to develop a state-feedback controller for the system. 
 The state space model developed in the previous phase is validated in the time domain first.
-The open loop system is tested to check whether it is completely observable and controllable throughout its states.
+
+![alt tag](https://github.com/rohitmurali8/Transfer-Function-Estimation-for-MIMO-system/blob/master/SS_VALIDATION.PNG)
+
+The open loop system is tested to check whether it is completely observable and controllable throughout its states. 
 The state feedback gain matrix is obtained using a Linear Quadratic Regulator(LQR) function. The gain matrix is designed for the following conditions to meet.
 
 Simulation Test Conditions:
@@ -42,6 +45,9 @@ Mandatory Performance Requirements:
 • All responses must always be bounded within the saturation limits of ±10V
 • All responses must be settled to within ±0.5V after t = 20 ms.
 
+![alt tag](https://github.com/rohitmurali8/Transfer-Function-Estimation-for-MIMO-system/blob/master/LQR.PNG)
+
+
 The state vector is estimated using the Kalman filter. The gains obtained by the kalman filter are used to represent the complete feedback controller as follows. 
 The discrete time output feedback system is given by the following matrices:
 
@@ -54,3 +60,4 @@ C = -G
 D = 0
 
 The closed loop responses are plotted to compare the response with the actual responses. 
+![alt tag](https://github.com/rohitmurali8/Transfer-Function-Estimation-for-MIMO-system/blob/master/KALMAN.PNG)
