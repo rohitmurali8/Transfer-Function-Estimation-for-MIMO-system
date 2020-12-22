@@ -3,6 +3,10 @@
 This is a two part project wherein the transfer function of an unknown system is estimated.
 In the first part of the project known as ALC_midterm.mlx, an excitation is developed for the unknown system.
 The SNR for the system is maximized by choosing the appropriate excitation function. Multiple excitation functions can be tried here.
+
+The frequency response for excitation with maximum SNR is shown below
+![](EXCITATION_RESPONSE.png)
+
 Care is taken to ensure that the unknown system does not saturate its output.
 Frequency response functions for each open loop path are estimated by using functions such as tfestimate() and mscohere().
 The invfreqz() function is used to estimate the transfer functions for each path in the open loop system. 
