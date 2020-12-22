@@ -5,14 +5,25 @@ In the first part of the project known as ALC_midterm.mlx, an excitation is deve
 The SNR for the system is maximized by choosing the appropriate excitation function. Multiple excitation functions can be tried here.
 
 The frequency response for excitation with maximum SNR is shown below
-![](EXCITATION_RESPONSE.png)
+
+![alt tag](https://github.com/rohitmurali8/Transfer-Function-Estimation-for-MIMO-system/blob/master/EXCITATION_RESPONSE.PNG)
 
 Care is taken to ensure that the unknown system does not saturate its output.
 Frequency response functions for each open loop path are estimated by using functions such as tfestimate() and mscohere().
 The invfreqz() function is used to estimate the transfer functions for each path in the open loop system. 
 The minimum realization transfer function is then converted to a state space object. The modred() function is used to reduced the order of the system by eliminating non contributing poles in the system.
 The individual transfer functions and the poles of the system are calculated. The poles obtained by the deduced state space model and the poles obatined on the individual paths are compared.
+
+![alt tag](https://github.com/rohitmurali8/Transfer-Function-Estimation-for-MIMO-system/blob/master/POLE_ESTIMATION.PNG)
+
 Finally, the frequency response function is plotted to verify if the response obtained by the tfestimate() function and the responses for the state space and minreal transfer functions match.
+
+
+![alt tag](https://github.com/rohitmurali8/Transfer-Function-Estimation-for-MIMO-system/blob/master/PATH2_RESPONSE.PNG)
+
+![alt tag](https://github.com/rohitmurali8/Transfer-Function-Estimation-for-MIMO-system/blob/master/PATH1_RESPONSE.PNG)
+
+
 The state space model developed is saved into a mat file.
 
 In the second part of the project, the objective is to develop a state-feedback controller for the system. 
